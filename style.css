@@ -26,11 +26,15 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #444;
   line-height: 1.9;
   background-color: #f3f3f3;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 /* GENERAL ELEMENTS */
@@ -204,10 +208,11 @@ h4 {
 }
 
 .header__img {
-  width: 100%;
+  width: 80%;
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
   transform: translateY(-6rem);
+  margin-left: 15%;
 }
 
 .highlight {
@@ -216,7 +221,7 @@ h4 {
 
 .highlight::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -470,7 +475,7 @@ h4 {
 }
 
 .testimonial::before {
-  content: '\201C';
+  content: "\201C";
   position: absolute;
   top: -5.7rem;
   left: -6.8rem;
