@@ -293,6 +293,15 @@ header div.row {
   opacity: 0.8;
 }
 
+#social-media img {
+  width: 50px;
+  margin: 1%;
+}
+
+#social-media img:hover {
+  opacity: 0.5;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1800px) {
@@ -397,7 +406,7 @@ header div.row {
     font-size: 1.2rem;
   }
 
-  a img {
+  a.navbar-brand img {
     width: 40px;
     height: 40px;
     margin-bottom: 2.7px;
