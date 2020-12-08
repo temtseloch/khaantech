@@ -278,6 +278,14 @@ header div.row {
 
 /* CONTACT */
 
+#contact .container {
+  width: 25%;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
 /* SOCIAL */
 
 #social-media h2 {
@@ -287,6 +295,18 @@ header div.row {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1800px) {
+  #contact .container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1500px) {
+  #contact .container {
+    width: 35%;
+  }
+}
+
 @media (max-width: 1400px) {
   #services div.carousel {
     width: 70%;
@@ -294,7 +314,17 @@ header div.row {
   }
 }
 
+@media (max-width: 1200px) {
+  #contact .container {
+    width: 40%;
+  }
+}
+
 @media (max-width: 991px) {
+  #contact .container {
+    width: 45%;
+  }
+
   #services div.carousel {
     width: 85%;
     margin: 0 7.5% 0 7.5%;
@@ -306,6 +336,10 @@ header div.row {
 }
 
 @media (max-width: 850px) {
+  #contact .container {
+    width: 55%;
+  }
+
   #services h5 {
     width: 50%;
     margin: 0 25% 0 25%;
@@ -313,6 +347,10 @@ header div.row {
 }
 
 @media (max-width: 700px) {
+  #contact .container {
+    width: 65%;
+  }
+
   #services h5 {
     width: 60%;
     margin: 0 20% 0 20%;
@@ -323,7 +361,17 @@ header div.row {
   }
 }
 
+@media (max-width: 600px) {
+  #contact .container {
+    width: 75%;
+  }
+}
+
 @media (max-width: 500px) {
+  #contact .container {
+    width: 90%;
+  }
+
   .section-title {
     font-size: 2rem;
   }
@@ -331,6 +379,10 @@ header div.row {
   .section-text {
     font-size: 1.5rem;
     margin-bottom: 5%;
+  }
+
+  header {
+    padding: 10%;
   }
 
   section {
@@ -364,5 +416,9 @@ header div.row {
   #services h5 {
     width: 80%;
     margin: 0 10% 0 10%;
+  }
+
+  #social-media h2 {
+    font-size: 1.5rem;
   }
 }
