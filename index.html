@@ -29,15 +29,13 @@
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto justify-content-end">
+        <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
             <a class="nav-link" href="#about">About Us</a>
           </li>
@@ -60,10 +58,10 @@
       <header id="header" class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h2 class="section-title">
+            <h1 class="section-title">
               Modern <span class="highlight">problems</span> require <br />
               <span class="highlight">modern</span> solutions
-            </h2>
+            </h1>
             <h3 class="section-text">
               No more headaches for tech solutions at your business
             </h3>
@@ -213,29 +211,49 @@
           <h3 class="section-text">Get a free quote today!</h3>
         </div>
         <div class="container">
-          <form action="">
-            <div>
-              <div class="form-group">
-                <input
-                  class="form-control"
-                  type="text"
-                  placeholder="Full Name"
-                />
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="email" placeholder="Email" />
-              </div>
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  type="text"
-                  placeholder="Job Description"
-                ></textarea>
-              </div>
+          <form
+            action="https://formspree.io/f/xjvparzb"
+            method="POST"
+            id="my-form"
+          >
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Full Name"
+                id="full-name"
+                name="full-name"
+                aria-label="name input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                aria-label="email input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                type="text"
+                placeholder="Job Description"
+                id="jop-description"
+                name="job-description"
+                aria-label="job description input"
+                required
+              ></textarea>
             </div>
 
             <button type="submit" class="btn btn-success">Submit</button>
           </form>
+
+          <div id="form-status"></div>
         </div>
       </section>
 
@@ -281,5 +299,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

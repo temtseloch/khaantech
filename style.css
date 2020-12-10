@@ -138,6 +138,7 @@ main {
   text-align: center;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -212,7 +213,7 @@ header img {
   width: 80%;
 }
 
-header h2 {
+h1 {
   font-size: 2.5rem;
   padding-bottom: 5%;
 }
@@ -245,6 +246,10 @@ header div.row {
   width: 50%;
   margin: 5%;
   border-radius: 100%;
+}
+
+#about h2 {
+  padding-bottom: 5%;
 }
 
 #about h4 {
@@ -284,6 +289,39 @@ header div.row {
 
 #contact textarea {
   height: 150px;
+}
+
+#form-status {
+  margin-top: 10%;
+  border-radius: 10px;
+  padding: 2% 0 2% 0;
+}
+
+#form-status.success {
+  background: #5ec576;
+  animation: form-status 4s ease forwards;
+}
+
+#form-status.error {
+  background: #e63946;
+  animation: form-status 4s ease forwards;
+}
+
+@keyframes form-status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 /* SOCIAL */
@@ -429,5 +467,9 @@ header div.row {
 
   #social-media h2 {
     font-size: 1.5rem;
+  }
+
+  #about h2 {
+    padding-bottom: 3%;
   }
 }
