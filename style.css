@@ -172,8 +172,8 @@ section h3 {
 
 .anchor {
   display: block;
-  height: 300px; /*same height as header*/
-  margin-top: -300px; /*same height as header*/
+  height: 250px; /*same height as header*/
+  margin-top: -250px; /*same height as header*/
   visibility: hidden;
 }
 
