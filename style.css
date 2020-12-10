@@ -170,6 +170,13 @@ section h3 {
   padding-bottom: 3%;
 }
 
+.anchor {
+  display: block;
+  height: 300px; /*same height as header*/
+  margin-top: -300px; /*same height as header*/
+  visibility: hidden;
+}
+
 /* NAVBAR */
 
 a.navbar-brand {
