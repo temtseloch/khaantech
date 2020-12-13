@@ -218,7 +218,41 @@ nav.navbar {
   width: 100%;
 }
 
+/* LANGUAGE SWITCH */
+
+.selected-language {
+  margin: 20px 0 20px 50px;
+  width: 90px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.selected-language img {
+  width: 32px;
+  height: 32px;
+}
+
+.selected-language span {
+  margin-left: 10px;
+}
+
+.selected-language:hover {
+  background-color: #5ec576;
+}
+
+.non-selected-language {
+  display: none;
+}
+
 /* HEADER */
+
+#header {
+  padding-top: 30px;
+}
 
 header img {
   width: 80%;

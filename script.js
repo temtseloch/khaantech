@@ -46,3 +46,15 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+
+document.getElementById("english").onclick = function toMongolian() {
+  document.getElementById("english").classList.add("non-selected-language");
+  document
+    .getElementById("mongolian")
+    .classList.remove("non-selected-language");
+};
+
+document.getElementById("mongolian").onclick = function toEnglish() {
+  document.getElementById("mongolian").classList.add("non-selected-language");
+  document.getElementById("english").classList.remove("non-selected-language");
+};
