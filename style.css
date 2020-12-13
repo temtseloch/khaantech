@@ -220,8 +220,13 @@ nav.navbar {
 
 /* LANGUAGE SWITCH */
 
+.language-switch {
+  display: flex;
+  justify-content: center;
+}
+
 .selected-language {
-  margin: 20px 0 20px 50px;
+  margin: 20px 0 10px 0;
   width: 90px;
   border-radius: 10px;
   cursor: pointer;
