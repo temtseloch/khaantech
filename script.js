@@ -1,3 +1,5 @@
+"use strict";
+
 window.addEventListener("DOMContentLoaded", function () {
   // get the form elements defined in your form HTML above
 
