@@ -233,7 +233,6 @@ nav.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
 }
 
 .selected-language img {
@@ -243,10 +242,6 @@ nav.navbar {
 
 .selected-language span {
   margin-left: 10px;
-}
-
-.selected-language:hover {
-  background-color: #5ec576;
 }
 
 .non-selected-language {
