@@ -7,12 +7,12 @@ const headline = document.querySelector(".headline");
 const first = gsap.fromTo(
   hero,
   { height: "0%" },
-  { height: "80%", duration: 1, ease: Power2.easeInOut }
+  { height: "95%", duration: 1, ease: Power2.easeInOut }
 );
 const second = gsap.fromTo(
   hero,
-  { width: "100%" },
-  { width: "80%", duration: 1.2, ease: Power2.easeInOut, delay: 1 }
+  { width: "80%" },
+  { width: "100%", duration: 1.2, ease: Power2.easeInOut, delay: 1 }
 );
 const third = gsap.fromTo(
   slider,

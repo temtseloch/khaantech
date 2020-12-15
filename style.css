@@ -17,7 +17,7 @@
 
 nav {
   display: grid;
-  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-columns: 3% 1fr 1fr 3%;
   min-height: 10vh;
   opacity: 0.8;
   align-items: center;
@@ -74,5 +74,12 @@ section {
 @media (max-width: 500px) {
   .headline {
     font-size: 40px;
+  }
+  h3#logo {
+    font-size: 20px;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
   }
 }
