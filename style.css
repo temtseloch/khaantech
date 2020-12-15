@@ -82,6 +82,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -96,6 +97,7 @@ h1 {
 }
 
 .nav-active {
+  -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
 
@@ -124,13 +126,45 @@ h1 {
 
 /* HOME */
 
-section {
+.home {
   width: 100%;
   height: 92vh;
 }
 
-section img {
+.home .img {
+  width: 100%;
+  height: 92vh;
+}
+
+.home img {
   width: 100%;
   height: 92vh;
   object-fit: cover;
+}
+
+.home-text-1,
+.home-text-2 {
+  position: absolute;
+  color: #f0f6f6;
+  opacity: 0.9;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.home-text-1 {
+  top: 20%;
+  left: 7%;
+}
+
+.home-text-2 {
+  bottom: 20%;
+  right: 7%;
+}
+
+@media (max-width: 768px) {
+  .home-text-1,
+  .home-text-2 {
+    font-size: 24px;
+  }
 }
