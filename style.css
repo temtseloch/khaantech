@@ -70,3 +70,9 @@ section {
   left: 0;
   top: 0;
 }
+
+@media (max-width: 500px) {
+  .headline {
+    font-size: 40px;
+  }
+}
