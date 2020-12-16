@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: #eddcd2;
+  letter-spacing: 5px;
 }
 
 .landing {
@@ -13,46 +14,74 @@
   padding: 0rem 5rem;
 }
 
-nav {
+.nav {
+  height: 10vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  min-height: 10vh;
-}
-
-.logo {
-  width: 80px;
-  filter: invert(74%) sepia(75%) saturate(43%) hue-rotate(339deg)
-    brightness(103%) contrast(97%);
-}
-
-.nav-links {
-  list-style: none;
-  width: 30%;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
-.nav-links li {
-  font-size: 1.2rem;
+.language-switch {
+  display: flex;
+  justify-content: center;
 }
 
-.nav-links a {
-  text-decoration: none;
-  font-weight: 400;
+.selected-language {
+  width: 90px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected-language img {
+  width: 32px;
+  height: 32px;
+}
+
+.selected-language span {
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-  opacity: 0.6;
+.selected-language span:hover {
+  opacity: 0.5;
+}
+
+.non-selected-language {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.brand {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  filter: invert(74%) sepia(75%) saturate(43%) hue-rotate(339deg)
+    brightness(103%) contrast(97%);
+  margin-bottom: -1%;
 }
 
 .headline {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -20%);
   font-size: 4rem;
   font-weight: 300;
 }
@@ -98,9 +127,21 @@ nav {
   transform: translateY(100%);
 }
 
+@media (max-width: 1500px) {
+  .brand {
+    height: 10vh;
+  }
+  .logo {
+    margin-bottom: -2%;
+  }
+}
+
 @media (max-width: 1024px) {
-  .nav-links {
-    width: 40%;
+  .brand {
+    height: 15vh;
+  }
+  .logo {
+    width: 90px;
   }
 
   .headline {
@@ -109,10 +150,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    width: 70%;
+  .logo {
+    width: 80px;
+    margin-bottom: -2.5%;
   }
-
   .intro-text {
     font-size: 2rem;
   }
@@ -120,62 +161,34 @@ nav {
   .headline {
     font-size: 2.5rem;
   }
-
-  .landing {
-    padding: 0 1rem;
-  }
 }
 
 @media (max-width: 600px) {
+  .logo {
+    width: 75px;
+    margin-bottom: -3%;
+  }
   .intro-text {
     font-size: 24px;
+  }
+  .brand {
+    height: 20vh;
   }
 }
 
 @media (max-width: 500px) {
-  .headline {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    transform: translate(-10%, -20%);
-  }
-
   .intro-text {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-  .headline {
-    position: absolute;
-    top: 20%;
-    left: 29%;
-    transform: translate(-11%, -20%);
-  }
-}
-
-@media (max-width: 400px) {
-  .headline {
-    position: absolute;
-    top: 20%;
-    left: 28%;
-    transform: translate(-15%, -20%);
+    font-size: 18px;
   }
 
-  .intro-text {
-    font-size: 16px;
+  .landing {
+    padding: 0 2rem;
   }
-}
-
-@media (max-width: 350px) {
-  .nav-links {
-    width: 90%;
-    justify-content: space-between;
+  .logo {
+    width: 70px;
+    margin-bottom: -3.5%;
   }
   .headline {
-    position: absolute;
-    top: 20%;
-    left: 22%;
-    transform: translate(-10%, -20%);
+    font-size: 2rem;
   }
 }
