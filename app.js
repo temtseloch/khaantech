@@ -1,23 +1,7 @@
-const navSlide = () => {
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-  hamburger.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
-
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 5 + 0.5
-        }s`;
-      }
-    });
-
-    hamburger.classList.toggle("toggle");
-  });
-};
-
-navSlide();
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.3 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 1 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".headline", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
