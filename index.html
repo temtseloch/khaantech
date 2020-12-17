@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/svg" href="images/logo.svg" />
+    <link rel="stylesheet" href="fullpage.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
@@ -13,67 +14,33 @@
     <title>Khaan Tech</title>
   </head>
   <body>
-    <header>
-      <div class="intro">
-        <div class="intro-text">
-          <h2 class="hide">
-            <span class="text">Taking your</span>
-          </h2>
-          <h2 class="hide">
-            <span class="text">online presence</span>
-          </h2>
-          <h2 class="hide">
-            <span class="text">to a whole new level.</span>
-          </h2>
+    <nav class="navbar">
+      <div class="language-switch">
+        <div id="english" class="selected-language">
+          <img src="https://www.countryflags.io/us/flat/32.png" />
+          <span>ENG</span>
+        </div>
+
+        <div id="mongolian" class="selected-language non-selected-language">
+          <img src="https://www.countryflags.io/mn/flat/32.png" />
+          <span>MNG</span>
         </div>
       </div>
-    </header>
+      <div>
+        <a href="">Contact</a>
+      </div>
+    </nav>
 
-    <div class="slider"></div>
-
-    <main>
-      <section class="landing">
-        <div class="nav">
-          <div class="language-switch">
-            <div id="english" class="selected-language">
-              <img src="https://www.countryflags.io/us/flat/32.png" />
-              <span>ENG</span>
-            </div>
-
-            <div id="mongolian" class="selected-language non-selected-language">
-              <img src="https://www.countryflags.io/mn/flat/32.png" />
-              <span>MNG</span>
-            </div>
-          </div>
-          <div>
-            <a href="">Contact</a>
-          </div>
-        </div>
-
+    <main id="fullpage">
+      <section class="section header">
         <div class="brand">
-          <img class="logo" src="images/logo.svg" alt="logo" />
-          <h1 class="headline">KHAAN TECH</h1>
+          <img class="logo ani" src="images/logo.svg" alt="logo" />
+          <h1 class="headline ani">KHAAN TECH</h1>
         </div>
       </section>
 
-      <section class="about">
-        <div class="nav">
-          <div class="language-switch">
-            <div id="english" class="selected-language">
-              <img src="https://www.countryflags.io/us/flat/32.png" />
-              <span>ENG</span>
-            </div>
-
-            <div id="mongolian" class="selected-language non-selected-language">
-              <img src="https://www.countryflags.io/mn/flat/32.png" />
-              <span>MNG</span>
-            </div>
-          </div>
-          <div>
-            <a href="">Contact</a>
-          </div>
-        </div>
-        <div class="about-headline"><h2 class="headline">ABOUT US</h2></div>
+      <section class="section about">
+        <h2 class="headline ani">ABOUT US</h2>
 
         <div class="people">
           <div class="person">
@@ -87,26 +54,26 @@
                 <span class="value">"Temtsel-Och"</span>,
               </p>
               <p>
-                <span class="key">lastName</span> :
+                <span class="key">lastName</span>:
                 <span class="value">"Ulziisaikhan"</span>,
               </p>
               <p>
-                <span class="key">nickName</span> :
+                <span class="key">nickName</span>:
                 <span class="value">"Temka"</span>,
               </p>
               <p>
-                <span class="key">age</span> : <span class="value">"24"</span>,
+                <span class="key">age</span>: <span class="value">"24"</span>,
               </p>
               <p>
-                <span class="key">education</span> :
+                <span class="key">education</span>:
                 <span class="value">"self-taught"</span>,
               </p>
               <p>
-                <span class="key">specialty</span> :
+                <span class="key">specialty</span>:
                 <span class="value">"front-end"</span>,
               </p>
               <p>
-                <span class="key">location</span> :
+                <span class="key">location</span>:
                 <span class="value">"Lexington, KY"</span>,
               </p>
               <p>}</p>
@@ -121,26 +88,26 @@
                 <span class="value">"Elbeg"</span>,
               </p>
               <p>
-                <span class="key">lastName</span> :
+                <span class="key">lastName</span>:
                 <span class="value">"Amarbayasgalan"</span>,
               </p>
               <p>
-                <span class="key">nickName</span> :
+                <span class="key">nickName</span>:
                 <span class="value">"Ebe"</span>,
               </p>
               <p>
-                <span class="key">age</span> : <span class="value">"24"</span>,
+                <span class="key">age</span>: <span class="value">"24"</span>,
               </p>
               <p>
-                <span class="key">education</span> :
+                <span class="key">education</span>:
                 <span class="value">"self-taught"</span>,
               </p>
               <p>
-                <span class="key">specialty</span> :
+                <span class="key">specialty</span>:
                 <span class="value">"back-end"</span>,
               </p>
               <p>
-                <span class="key">location</span> :
+                <span class="key">location</span>:
                 <span class="value">"Lexington, KY"</span>,
               </p>
               <p>}</p>
@@ -148,32 +115,15 @@
           </div>
         </div>
       </section>
-      <section class="services">
-        <div class="nav">
-          <div class="language-switch">
-            <div id="english" class="selected-language">
-              <img src="https://www.countryflags.io/us/flat/32.png" />
-              <span>ENG</span>
-            </div>
 
-            <div id="mongolian" class="selected-language non-selected-language">
-              <img src="https://www.countryflags.io/mn/flat/32.png" />
-              <span>MNG</span>
-            </div>
-          </div>
-          <div>
-            <a href="">Contact</a>
-          </div>
-        </div>
-        <div class="services-headline">
-          <h2 class="headline">WHAT WE DO</h2>
-        </div>
-        <div class="services-text">
-          <p>We design and develop good-looking websites.</p>
+      <section class="section service">
+        <h2 class="headline ani">WHAT WE DO</h2>
+        <div class="text">
+          <p>We design and develop beautiful modern websites.</p>
 
           <p>
-            Our products range from a simple landing page for small businesses
-            to a complex eCommerce app custom made for online sellers.
+            Our products range from a simple landing page custom made for small
+            businesses to a complex eCommerce app.
           </p>
         </div>
       </section>
@@ -183,6 +133,7 @@
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
+    <script src="fullpage.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
