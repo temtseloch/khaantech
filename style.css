@@ -56,7 +56,7 @@ section {
 
 .navbar {
   width: 100%;
-  height: 10vh;
+  height: 10%;
   padding: 0 5rem;
   display: flex;
   justify-content: space-between;
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .brand {
-  height: 80%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -142,6 +142,7 @@ a:hover {
 .header-text {
   text-align: right;
   font-size: 1.5rem;
+  height: 5%;
 }
 
 .header-text h3 {
@@ -160,13 +161,13 @@ a:hover {
 }
 
 .about .headline {
-  height: 20vh;
+  height: 20%;
 }
 
 .people {
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 50%;
   justify-content: space-evenly;
 }
 
@@ -208,11 +209,11 @@ a:hover {
 
 .service .headline {
   width: 100%;
-  height: 20vh;
+  height: 20%;
 }
 
 .service-text {
-  height: 50vh;
+  height: 50%;
 }
 
 /* MEDIA QUERIES */
@@ -266,7 +267,7 @@ a:hover {
   }
 
   .about .headline {
-    height: 15vh;
+    height: 15%;
   }
 
   .person img {
@@ -274,7 +275,7 @@ a:hover {
   }
 
   .people {
-    height: 55vh;
+    height: 55%;
     flex-direction: column;
     justify-content: space-between;
   }
