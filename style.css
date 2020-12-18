@@ -248,7 +248,7 @@ a:hover {
   }
 
   section {
-    padding: 0;
+    padding: 0 2rem;
   }
   .navbar {
     padding: 0 2rem;
@@ -275,8 +275,13 @@ a:hover {
   }
 
   .people {
-    height: 55%;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  .person img {
+    width: 150px;
   }
 }
