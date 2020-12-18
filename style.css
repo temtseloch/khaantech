@@ -215,16 +215,32 @@ a:hover {
 
 .service .headline {
   width: 100%;
-  height: 30%;
+  height: 10%;
 }
 
 .service-text {
-  height: 60%;
+  height: 80%;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .service-text h3 {
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 2px;
+}
+
+.service-text span {
+  letter-spacing: 2px;
+  color: #e63946;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-text span:hover {
+  color: #eddcd2;
 }
 
 /* MODAL */
@@ -367,11 +383,22 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .service-text {
+    width: 400px;
+  }
+  .service-text h3 {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
   .person img {
     width: 150px;
+  }
+
+  .service-text {
+    width: 300px;
   }
 
   .modal {
