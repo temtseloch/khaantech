@@ -376,6 +376,7 @@ a:hover {
 
   .modal {
     width: 300px;
+    font-size: 1rem;
   }
 
   .modal__form input,
