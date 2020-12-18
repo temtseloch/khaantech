@@ -377,4 +377,9 @@ a:hover {
   .modal {
     width: 300px;
   }
+
+  .modal__form input,
+  .modal__form textarea {
+    padding: 0.5rem 1rem;
+  }
 }
