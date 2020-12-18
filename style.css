@@ -222,6 +222,86 @@ a:hover {
   height: 60%;
 }
 
+.service-text h3 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  padding: 1rem 0;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  width: 400px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal__form {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal__form input {
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  color: #555b6e;
+}
+
+.modal__form textarea {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  color: #555b6e;
+}
+
+.modal__form button {
+  letter-spacing: 1px;
+  color: #bbb;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  color: #555b6e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal__form button:hover {
+  background-color: #eddcd2;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1024px) {
@@ -292,5 +372,9 @@ a:hover {
 @media (max-width: 500px) {
   .person img {
     width: 150px;
+  }
+
+  .modal {
+    width: 300px;
   }
 }
