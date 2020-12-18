@@ -5,7 +5,7 @@
 const tl1 = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 tl1.to(".hide .text", { y: "0%", duration: 1, stagger: 0.25 });
-tl1.fromTo(".header", { y: "200%" }, { y: "0%", duration: 1.5, delay: 0.5 });
+tl1.fromTo(".header", { y: "200%" }, { y: "0%", duration: 1.5 });
 tl1.fromTo(
   ".navbar",
   { y: "25", opacity: 0 },
