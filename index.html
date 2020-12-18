@@ -41,7 +41,7 @@
         </div>
       </div>
       <div>
-        <a href="">Contact</a>
+        <a class="nav__link--btn btn--show-modal" href="">Contact</a>
       </div>
     </nav>
 
@@ -137,15 +137,52 @@
 
       <section class="section service">
         <div class="space"></div>
-        <h2 class="headline ani">PRICING</h2>
-        <div class="service-text">
-          <p>
+        <h2 class="headline ani">SERVICES</h2>
+        <div class="service-text ani">
+          <h3>
             Our products range from a simple landing page custom made for small
             businesses to a complex eCommerce app.
-          </p>
+          </h3>
+          <h3>Contact us to get a free qoute!</h3>
         </div>
       </section>
     </main>
+    <div class="modal hidden">
+      <form
+        id="my-form"
+        class="modal__form"
+        action="https://formspree.io/f/xjvparzb"
+        method="POST"
+      >
+        <input
+          id="full-name"
+          type="text"
+          placeholder="Full Name"
+          name="full-name"
+          aria-label="name input"
+          required
+        />
+        <input
+          id="email"
+          type="email"
+          placeholder="Email"
+          name="email"
+          aria-label="email input"
+          required
+        />
+        <textarea
+          id="jop-description"
+          type="text"
+          placeholder="Job Description"
+          name="job-description"
+          aria-label="job description input"
+          required
+        ></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="overlay hidden"></div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
