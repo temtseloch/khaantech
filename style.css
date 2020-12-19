@@ -208,6 +208,7 @@ a:hover {
   animation-name: example;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  transition: all 1s ease;
 }
 
 .info {
@@ -426,5 +427,9 @@ a:hover {
   .modal__form textarea {
     padding: 0.5rem;
     margin-bottom: 1rem;
+  }
+
+  .info {
+    font-size: 0.8rem;
   }
 }
