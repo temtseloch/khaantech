@@ -117,4 +117,26 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 
+// INFO
+
+document.querySelector(".temtsel-image").addEventListener("click", function () {
+  document.querySelector(".temtsel-image").style.display = "none";
+  document.querySelector(".temtsel-info").style.display = "block";
+});
+
+document.querySelector(".temtsel-info").addEventListener("click", function () {
+  document.querySelector(".temtsel-info").style.display = "none";
+  document.querySelector(".temtsel-image").style.display = "block";
+});
+
+document.querySelector(".elbeg-image").addEventListener("click", function () {
+  document.querySelector(".elbeg-image").style.display = "none";
+  document.querySelector(".elbeg-info").style.display = "block";
+});
+
+document.querySelector(".elbeg-info").addEventListener("click", function () {
+  document.querySelector(".elbeg-info").style.display = "none";
+  document.querySelector(".elbeg-image").style.display = "block";
+});
+
 // LANGUAGE SWITCH
