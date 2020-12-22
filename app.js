@@ -35,7 +35,7 @@ new fullpage("#fullpage", {
     tl2.fromTo(
       ".ani",
       { y: "25", opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5 }
+      { y: 0, opacity: 1, duration: 0.3 }
     );
   },
 });
@@ -120,23 +120,113 @@ function ajax(method, url, data, success, error) {
 // INFO
 
 document.querySelector(".temtsel-image").addEventListener("click", function () {
+  const tl3 = gsap.timeline({ defaults: { ease: "power1.out" } });
+
   if (document.querySelector(".elbeg-image").style.display === "none") {
-    document.querySelector(".temtsel-info").style.display = "none";
-    document.querySelector(".elbeg-image").style.display = "block";
+    tl3.to(".temtsel-info", {
+      y: "25",
+      opacity: 0,
+      display: "none",
+      duration: 1,
+    });
+    // document.querySelector(".temtsel-info").style.display = "none";
+    tl3.to(".elbeg-image", {
+      y: 0,
+      opacity: 1,
+      display: "block",
+      duration: 1,
+    });
+    // document.querySelector(".elbeg-image").style.display = "block";
   } else {
-    document.querySelector(".elbeg-image").style.display = "none";
-    document.querySelector(".temtsel-info").style.display = "block";
+    tl3.to(".elbeg-image", {
+      y: "25",
+      opacity: 0,
+      display: "none",
+      duration: 1,
+    });
+    // document.querySelector(".elbeg-image").style.display = "none";
+    tl3.to(".temtsel-info", {
+      y: 0,
+      opacity: 1,
+      display: "block",
+      duration: 1,
+    });
   }
 });
 
 document.querySelector(".elbeg-image").addEventListener("click", function () {
+  const tl4 = gsap.timeline({ defaults: { ease: "power1.out" } });
   if (document.querySelector(".temtsel-image").style.display === "none") {
-    document.querySelector(".elbeg-info").style.display = "none";
-    document.querySelector(".temtsel-image").style.display = "block";
+    tl4.to(".elbeg-info", {
+      y: "25",
+      opacity: 0,
+      display: "none",
+      duration: 1,
+    });
+    tl4.to(".temtsel-image", {
+      y: 0,
+      opacity: 1,
+      display: "block",
+      duration: 1,
+    });
   } else {
-    document.querySelector(".temtsel-image").style.display = "none";
-    document.querySelector(".elbeg-info").style.display = "block";
+    tl4.to(".temtsel-image", {
+      y: "25",
+      opacity: 0,
+      display: "none",
+      duration: 1,
+    });
+    tl4.to(".elbeg-info", {
+      y: 0,
+      opacity: 1,
+      display: "block",
+      duration: 1,
+    });
   }
 });
 
 // LANGUAGE SWITCH
+
+document.getElementById("english").onclick = function toMongolian() {
+  document.getElementById("english").classList.add("non-selected-language");
+  document
+    .getElementById("mongolian")
+    .classList.remove("non-selected-language");
+  document.querySelector("h1").innerHTML = "ХААН ТЕК";
+  document.querySelector(".nav__link--btn").innerHTML = "Холбоо Барих";
+  document.querySelector(".header-text h3").innerHTML =
+    "Бид таны хүсэлтийн дагуу вэбсайт хийнэ";
+  document.querySelector(".about h2").innerHTML = "БИДНИЙ ТУХАЙ";
+  document.querySelector(".service h2").innerHTML = "МАНАЙ ҮЙЛЧИЛГЭЭ";
+  document.querySelector(".service h3:nth-of-type(1)").innerHTML =
+    "Бид жижиг дунд бизнест зориулсан энгийн вэб пайжээс эхлүүлээд том онлайн дэлгүүр хүртэл хийн өгч үйлчилдэг.";
+  document.querySelector(".service h3:nth-of-type(2)").innerHTML =
+    "Бидэнтэй холбоо барин үнийн санал аваарай!";
+  document.querySelector("form #full-name").setAttribute("placeholder", "Нэр");
+  document.querySelector("form #email").setAttribute("placeholder", "Имайл");
+  document
+    .querySelector("form #job-description")
+    .setAttribute("placeholder", "Мэссэж");
+};
+
+document.getElementById("mongolian").onclick = function toEnglish() {
+  document.getElementById("mongolian").classList.add("non-selected-language");
+  document.getElementById("english").classList.remove("non-selected-language");
+  document.querySelector("h1").innerHTML = "KHAAN TECH";
+  document.querySelector(".nav__link--btn").innerHTML = "Contact";
+  document.querySelector(".header-text h3").innerHTML =
+    "We design and develop custom websites";
+  document.querySelector(".about h2").innerHTML = "ABOUS US";
+  document.querySelector(".service h2").innerHTML = "SERVICES";
+  document.querySelector(".service h3:nth-of-type(1)").innerHTML =
+    "Our products range from a simple landing page custom made for small businesses to a complex eCommerce app.";
+  document.querySelector(".service h3:nth-of-type(2)").innerHTML =
+    "Contact us to get a free qoute!";
+  document
+    .querySelector("form #full-name")
+    .setAttribute("placeholder", "Full Name");
+  document.querySelector("form #email").setAttribute("placeholder", "Email");
+  document
+    .querySelector("form #job-description")
+    .setAttribute("placeholder", "Message");
+};

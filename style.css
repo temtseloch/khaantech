@@ -160,7 +160,7 @@ a:hover {
 /* ABOUT */
 
 .about {
-  background: linear-gradient(to top right, black, #160203);
+  background: black;
   display: flex;
   flex-direction: column;
 }
@@ -186,6 +186,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 @keyframes example {
