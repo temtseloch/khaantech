@@ -127,14 +127,14 @@ document.querySelector(".temtsel-image").addEventListener("click", function () {
       y: "25",
       opacity: 0,
       display: "none",
-      duration: 1,
+      duration: 0.5,
     });
     // document.querySelector(".temtsel-info").style.display = "none";
     tl3.to(".elbeg-image", {
       y: 0,
       opacity: 1,
       display: "block",
-      duration: 1,
+      duration: 0.5,
     });
     // document.querySelector(".elbeg-image").style.display = "block";
   } else {
@@ -142,14 +142,14 @@ document.querySelector(".temtsel-image").addEventListener("click", function () {
       y: "25",
       opacity: 0,
       display: "none",
-      duration: 1,
+      duration: 0.5,
     });
     // document.querySelector(".elbeg-image").style.display = "none";
     tl3.to(".temtsel-info", {
       y: 0,
       opacity: 1,
       display: "block",
-      duration: 1,
+      duration: 0.5,
     });
   }
 });
@@ -161,26 +161,26 @@ document.querySelector(".elbeg-image").addEventListener("click", function () {
       y: "25",
       opacity: 0,
       display: "none",
-      duration: 1,
+      duration: 0.5,
     });
     tl4.to(".temtsel-image", {
       y: 0,
       opacity: 1,
       display: "block",
-      duration: 1,
+      duration: 0.5,
     });
   } else {
     tl4.to(".temtsel-image", {
       y: "25",
       opacity: 0,
       display: "none",
-      duration: 1,
+      duration: 0.5,
     });
     tl4.to(".elbeg-info", {
       y: 0,
       opacity: 1,
       display: "block",
-      duration: 1,
+      duration: 0.5,
     });
   }
 });
